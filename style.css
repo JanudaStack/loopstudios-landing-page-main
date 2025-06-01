@@ -169,7 +169,7 @@ textarea {
 .gallery-section {
     display: flex;
     flex-direction: column;
-    padding-bottom: 4rem;
+    padding-bottom: 6.5rem;
 }
 
 .gallery-title {
@@ -219,6 +219,7 @@ textarea {
     transform: scale(1.1);
 }
 
+/* SEE ALL button */
 .see-all-mobile {
     display: flex;
     justify-content: center;
@@ -255,4 +256,50 @@ textarea {
 
 .see-all-btn:hover {
     color: var(--white); /* Optional: Change text color on hover */
+}
+
+/* Footer section */
+.site-footer {
+    padding: 4rem 3rem;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-nav-links a {
+    color: var(--white);
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-copyright {
+    color: var(--light-gray);
+}
+
+/* attribution */
+.attribution {
+    background-color: var(--black);
+    color: var(--light-gray);
+}
+
+.attribution a {
+    color: var(--white);
 }
