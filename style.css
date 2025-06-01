@@ -188,7 +188,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem 1.5rem;
-    gap: 1.3rem;
+    gap: 1.5rem;
 }
 
 .gallery-item {
@@ -196,11 +196,13 @@ textarea {
 }
 
 .gallery-item img {
-    transition: transform 0.3s;
+    transition: 0.3s;
+    filter: brightness(0.7);
 }
 
 .gallery-item:hover img {
     transform: scale(1.1);
+    filter: brightness(1.1);
 }
 
 .item-title {
@@ -287,6 +289,7 @@ textarea {
 .social-icons {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -298,6 +301,7 @@ textarea {
 .attribution {
     background-color: var(--black);
     color: var(--light-gray);
+    padding: 2rem;
 }
 
 .attribution a {
