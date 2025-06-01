@@ -10,12 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    line-height: 1.6;
-    background-color: #fff; /* Set a default background color */
-    color: #000; /* Set a default text color */
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -26,13 +20,13 @@ h1,
 h2,
 h3,
 nav a {
-    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
 }
 
 body,
 p,
 button {
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
 
 a {
@@ -70,7 +64,7 @@ textarea {
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     --dark-gray: hsl(0, 0%, 15%);
-    --light-gray: hsl(0, 0%, 85%);
+    --light-gray: hsl(0, 0%, 56%);
     --primary-purple: hsl(259, 50%, 50%);
     --primary-pink: hsl(330, 70%, 60%);
     --hover-gray: hsl(0, 0%, 90%);
@@ -124,6 +118,7 @@ textarea {
 
 .hero-title {
     color: var(--white);
+    font-weight: 400;
     font-family: var(--font-secondary);
     font-size: clamp(
         2rem,
@@ -132,4 +127,40 @@ textarea {
     ); /* Adjusts font size between 2rem and 3rem based on viewport width */
     text-transform: uppercase;
     max-width: 90%; /* Prevents the text from exceeding the frame width */
+}
+
+/* Main section */
+
+/* About section */
+.about-section {
+    padding: 7rem 1rem;
+}
+
+.about-content {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-title {
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    font-size: clamp(
+        1.5rem,
+        4vw,
+        2.5rem
+    ); /* Adjusts font size between 1.5rem and 2.5rem based on viewport width */
+    text-transform: uppercase;
+}
+
+.about-description {
+    color: var(--light-gray);
+    font-size: clamp(
+        1rem,
+        2.5vw,
+        1.25rem
+    ); /* Adjusts font size between 1rem and 1.25rem based on viewport width */
 }
