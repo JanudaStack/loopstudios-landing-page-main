@@ -324,6 +324,14 @@ textarea {
     display: flex;
 }
 
+.footer-container-left,
+.footer-container-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
 .footer-nav-links {
     display: flex;
     align-items: center;
@@ -364,6 +372,7 @@ textarea {
 }
 
 .footer-copyright {
+    text-align: center;
     color: var(--light-gray);
 }
 
@@ -459,6 +468,7 @@ textarea {
     .footer-container-right {
         display: flex;
         flex-direction: column;
+        align-items: unset;
         gap: 1.5rem;
     }
 
