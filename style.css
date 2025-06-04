@@ -88,6 +88,7 @@ textarea {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 1.5rem;
+    position: relative;
 }
 
 .site-logo img {
@@ -102,6 +103,40 @@ textarea {
 .desktop-nav,
 .mobile-nav {
     display: none;
+}
+
+.mobile-nav {
+    display: none; /* Default: hidden */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    height: 100svh;
+    padding: 0rem 3rem;
+    transition: 0.3s all ease-in-out; /* Smooth transition */
+}
+
+.close-button-mobile {
+    position: absolute;
+    left: 88%;
+    top: 4%;
+    transform: translate(-50%, 50%);
+}
+
+.nav-links-mobile {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.nav-links-mobile a {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /* Hero section */
@@ -371,6 +406,7 @@ textarea {
     .nav-links-desktop a {
         color: var(--white);
         font-size: 18px;
+        font-weight: 300;
     }
 
     .nav-links-desktop a::after {
@@ -396,6 +432,11 @@ textarea {
     /* Update gallery grid for tablets */
     .gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(10.75rem, 1fr));
+    }
+
+    .gallery-grid picture {
+        display: inline-flex;
+        justify-content: center;
     }
 
     /* Show desktop "See All" button and hide mobile version */
