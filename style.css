@@ -135,6 +135,7 @@ textarea {
 .about-section {
     padding: 7rem 1rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -319,19 +320,22 @@ textarea {
     color: var(--white);
 }
 
-/* Styles for tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Styles for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    /* Update header background for tablets */
     .site-header {
         background-image: url('./images/desktop/image-hero.jpg');
         background-position: center;
         background-size: cover;
     }
 
+    /* Adjust site logo dimensions */
     .site-logo img {
         width: auto;
         height: auto;
     }
 
+    /* Hide hamburger menu and show desktop navigation */
     .hamburger-menu {
         display: none;
     }
@@ -340,6 +344,7 @@ textarea {
         display: block;
     }
 
+    /* Style desktop navigation links */
     .nav-links-desktop {
         display: flex;
         gap: 2rem;
@@ -349,21 +354,112 @@ textarea {
         color: var(--white);
     }
 
+    /* Adjust gallery header layout */
     .gallery-header {
         padding: 0 2rem;
         display: flex;
         justify-content: space-between;
     }
 
+    /* Update gallery grid for tablets */
     .gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(10.75rem, 1fr));
     }
 
+    /* Show desktop "See All" button and hide mobile version */
     .see-all-desktop {
         display: block;
     }
 
     .see-all-mobile {
         display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 2rem 3.5rem;
+    }
+
+    /* Adjust hero section padding for larger screens */
+    .hero {
+        padding: 0 3.5rem;
+    }
+
+    /* Set a fixed width for the hero frame */
+    .hero-frame {
+        width: 35rem;
+    }
+
+    /* Adjust about section layout for larger screens */
+    .about-section {
+        padding: 7rem 4rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Set about content to take up half the space */
+    .about-content {
+        flex-basis: 50%;
+    }
+
+    /* Adjust gallery header and grid padding for larger screens */
+    .gallery-header,
+    .gallery-grid {
+        padding: 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Align about section content to the bottom for extra-large screens */
+    .about-section {
+        align-items: flex-end;
+    }
+
+    /* Restrict about title width for better alignment */
+    .about-title {
+        width: 90%;
+    }
+
+    /* Style about content with background, padding, and positioning */
+    .about-content {
+        background-color: var(--white);
+        padding: 3rem 0 0 4rem;
+        text-align: left;
+        position: relative;
+        right: 5rem;
+        width: 70%;
+    }
+}
+
+/* Styles for extra-large screens (min-width: 1440px) */
+@media (min-width: 1440px) {
+    /* Add consistent horizontal padding for key sections */
+    .navbar,
+    .hero,
+    .about-section,
+    .gallery-header,
+    .gallery-grid {
+        padding: 0 6rem;
+    }
+
+    /* Increase vertical padding for the navbar */
+    .navbar {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    /* Add vertical padding for the about section */
+    .about-section {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    /* Add vertical padding for the gallery grid */
+    .gallery-grid {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 }
