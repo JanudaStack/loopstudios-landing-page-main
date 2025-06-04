@@ -298,11 +298,31 @@ textarea {
     text-align: center;
 }
 
+.footer-nav-links a::after {
+    content: '';
+    display: block;
+    background-color: var(--white);
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.footer-nav-links li a:hover::after {
+    transform: scaleX(1);
+}
+
 .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+}
+
+.social-icons img {
+    transition: 0.3s ease;
+}
+.social-icons img:hover {
+    filter: brightness(0.5);
 }
 
 .footer-copyright {
@@ -384,6 +404,29 @@ textarea {
     }
 }
 
+@media (min-width: 992px) {
+    .site-footer {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .footer-container-left,
+    .footer-container-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-nav-links {
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+    }
+}
+
 @media (min-width: 1025px) {
     .navbar {
         padding: 2rem 3.5rem;
@@ -449,6 +492,10 @@ textarea {
         position: relative;
         right: 5rem;
         width: 70%;
+    }
+
+    .site-footer {
+        padding: 4rem 6rem;
     }
 }
 
