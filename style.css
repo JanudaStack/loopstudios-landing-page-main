@@ -209,6 +209,8 @@ textarea {
 }
 
 .gallery-item:hover img {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 100%, 0.43);
     transform: scale(1.05);
     filter: brightness(1.1);
 }
@@ -222,10 +224,11 @@ textarea {
     transform: translateY(0%);
     font-weight: 300;
     text-transform: uppercase;
-    width: 40%;
+    width: 50%;
 }
 
 .gallery-item:hover .item-title {
+    cursor: pointer;
     transform: scale(1.1);
 }
 
@@ -337,6 +340,7 @@ textarea {
 }
 
 .attribution a {
+    text-decoration: none;
     color: var(--white);
 }
 
@@ -449,7 +453,7 @@ textarea {
     }
 
     .nav-links-desktop a {
-        font-size: clamp(1.125rem, 2vw + 1rem, 1.313rem);
+        font-size: clamp(1.125rem, 2vw + 1rem, 1.2Zrem);
     }
 
     /* Adjust about section layout for larger screens */
