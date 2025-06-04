@@ -329,12 +329,6 @@ textarea {
         background-size: cover;
     }
 
-    /* Adjust site logo dimensions */
-    .site-logo img {
-        width: auto;
-        height: auto;
-    }
-
     /* Hide hamburger menu and show desktop navigation */
     .hamburger-menu {
         display: none;
@@ -352,6 +346,20 @@ textarea {
 
     .nav-links-desktop a {
         color: var(--white);
+        font-size: 18px;
+    }
+
+    .nav-links-desktop a::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background-color: var(--white);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links-desktop li a:hover::after {
+        transform: scaleX(1);
     }
 
     /* Adjust gallery header layout */
@@ -381,6 +389,12 @@ textarea {
         padding: 2rem 3.5rem;
     }
 
+    /* Adjust site logo dimensions */
+    .site-logo img {
+        width: auto;
+        height: auto;
+    }
+
     /* Adjust hero section padding for larger screens */
     .hero {
         padding: 0 3.5rem;
@@ -389,6 +403,10 @@ textarea {
     /* Set a fixed width for the hero frame */
     .hero-frame {
         width: 35rem;
+    }
+
+    .nav-links-desktop a {
+        font-size: clamp(1.125rem, 2vw + 1rem, 1.313rem);
     }
 
     /* Adjust about section layout for larger screens */
