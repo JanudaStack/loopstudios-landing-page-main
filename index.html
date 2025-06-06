@@ -22,18 +22,14 @@
             rel="stylesheet"
         />
 
-        <title>Frontend Mentor | Loopstudios</title>
+        <!-- AOS Library -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
+        <title>Frontend Mentor | Loopstudios</title>
     </head>
     <body>
         <header class="site-header">
@@ -85,24 +81,29 @@
             </section>
         </header>
         <main class="main-content">
-            <section class="about-section">
-                <picture class="about-section-img">
-                    <img
-                        src="./images/mobile/image-interactive.jpg"
-                        alt="about-image"
-                    />
-                </picture>
-                <div class="about-content">
-                    <h2 class="about-title">The leader in interactive VR</h2>
-                    <p class="about-description">
-                        Founded in 2011, Loopstudios has been producing
-                        world-class virtual reality projects for some of the
-                        best companies around the globe. Our award-winning
-                        creations have transformed businesses through digital
-                        experiences that bind to their brand.
-                    </p>
-                </div>
-            </section>
+            <div data-aos="fade-down">
+                <section class="about-section">
+                    <picture class="about-section-img">
+                        <img
+                            src="./images/mobile/image-interactive.jpg"
+                            alt="about-image"
+                        />
+                    </picture>
+                    <div class="about-content">
+                        <h2 class="about-title">
+                            The leader in interactive VR
+                        </h2>
+                        <p class="about-description">
+                            Founded in 2011, Loopstudios has been producing
+                            world-class virtual reality projects for some of the
+                            best companies around the globe. Our award-winning
+                            creations have transformed businesses through
+                            digital experiences that bind to their brand.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
             <section class="gallery-section">
                 <div class="gallery-header">
                     <h2 class="gallery-title">Our creations</h2>
@@ -110,112 +111,124 @@
                         <button class="see-all-btn">See All</button>
                     </div>
                 </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item gi-1">
-                        <picture>
-                            <source
-                                srcset="./images/desktop/image-deep-earth.jpg"
-                                media="(min-width:768px)"
-                            />
-                            <img
-                                src="./images/mobile/image-deep-earth.jpg"
-                                alt="Deep Earth"
-                            />
-                        </picture>
-                        <h3 class="item-title">Deep Earth</h3>
-                    </div>
-                    <div class="gallery-item gi-2">
-                        <picture>
-                            <source
-                                srcset="./images/desktop/image-night-arcade.jpg"
-                                media="(min-width:768px)"
-                            />
-                            <img
-                                src="./images/mobile/image-night-arcade.jpg"
-                                alt="Night Arcade"
-                            />
-                        </picture>
-                        <h3 class="item-title">Night Arcade</h3>
-                    </div>
-                    <div class="gallery-item gi-3">
-                        <picture>
-                            <source
-                                srcset="./images/desktop/image-soccer-team.jpg"
-                                media="(min-width:768px)"
-                            />
-                            <img
-                                src="./images/mobile/image-soccer-team.jpg"
-                                alt="Soccer Team VR"
-                            />
-                        </picture>
-                        <h3 class="item-title">Soccer Team VR</h3>
-                    </div>
-                    <div class="gallery-item gi-4">
-                        <picture>
-                            <source
-                                srcset="./images/desktop/image-grid.jpg"
-                                media="(min-width:768px)"
-                            />
-                            <img
-                                src="./images/mobile/image-grid.jpg"
-                                alt="The Grid"
-                            />
-                        </picture>
-                        <h3 class="item-title">The Grid</h3>
-                    </div>
-                    <div class="gallery-item gi-5">
-                        <picture>
-                            <source
-                                srcset="./images/desktop/image-from-above.jpg"
-                                media="(min-width:768px)"
-                            />
-                            <img
-                                src="./images/mobile/image-from-above.jpg"
-                                alt="From Up Above VR"
-                            />
-                        </picture>
-                        <h3 class="item-title">From Up Above VR</h3>
-                    </div>
-                    <div class="gallery-item gi-6">
-                        <picture>
-                            <source
-                                srcset="
-                                    ./images/desktop/image-pocket-borealis.jpg
-                                "
-                                media="(min-width:768px)"
-                            />
-                            <img
-                                src="./images/mobile/image-pocket-borealis.jpg"
-                                alt="Pocket Borealis"
-                            />
-                        </picture>
-                        <h3 class="item-title">Pocket Borealis</h3>
-                    </div>
-                    <div class="gallery-item gi-7">
-                        <picture>
-                            <source
-                                srcset="./images/desktop/image-curiosity.jpg"
-                                media="(min-width:768px)"
-                            />
-                            <img
-                                src="./images/mobile/image-curiosity.jpg"
-                                alt="The Curiosity"
-                            />
-                        </picture>
-                        <h3 class="item-title">The Curiosity</h3>
-                    </div>
-                    <div class="gallery-item gi-8">
-                        <picture>
-                            <source
-                                srcset="./images/desktop/image-fisheye.jpg"
-                                media="(min-width:768px)"
-                            />
-                            <img
-                                src="./images/mobile/image-fisheye.jpg"
-                                alt="Make It Fisheye"
-                            />
-                        </picture>
-                        <h3 class="item-title">Make It Fisheye</h3>
+                <div data-aos="zoom-in">
+                    <div class="gallery-grid">
+                        <div class="gallery-item gi-1">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/image-deep-earth.jpg
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/mobile/image-deep-earth.jpg"
+                                    alt="Deep Earth"
+                                />
+                            </picture>
+                            <h3 class="item-title">Deep Earth</h3>
+                        </div>
+                        <div class="gallery-item gi-2">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/image-night-arcade.jpg
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/mobile/image-night-arcade.jpg"
+                                    alt="Night Arcade"
+                                />
+                            </picture>
+                            <h3 class="item-title">Night Arcade</h3>
+                        </div>
+                        <div class="gallery-item gi-3">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/image-soccer-team.jpg
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/mobile/image-soccer-team.jpg"
+                                    alt="Soccer Team VR"
+                                />
+                            </picture>
+                            <h3 class="item-title">Soccer Team VR</h3>
+                        </div>
+                        <div class="gallery-item gi-4">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/image-grid.jpg"
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/mobile/image-grid.jpg"
+                                    alt="The Grid"
+                                />
+                            </picture>
+                            <h3 class="item-title">The Grid</h3>
+                        </div>
+                        <div class="gallery-item gi-5">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/image-from-above.jpg
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/mobile/image-from-above.jpg"
+                                    alt="From Up Above VR"
+                                />
+                            </picture>
+                            <h3 class="item-title">From Up Above VR</h3>
+                        </div>
+                        <div class="gallery-item gi-6">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/image-pocket-borealis.jpg
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/mobile/image-pocket-borealis.jpg"
+                                    alt="Pocket Borealis"
+                                />
+                            </picture>
+                            <h3 class="item-title">Pocket Borealis</h3>
+                        </div>
+                        <div class="gallery-item gi-7">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop/image-curiosity.jpg
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/mobile/image-curiosity.jpg"
+                                    alt="The Curiosity"
+                                />
+                            </picture>
+                            <h3 class="item-title">The Curiosity</h3>
+                        </div>
+                        <div class="gallery-item gi-8">
+                            <picture>
+                                <source
+                                    srcset="./images/desktop/image-fisheye.jpg"
+                                    media="(min-width:768px)"
+                                />
+                                <img
+                                    src="./images/mobile/image-fisheye.jpg"
+                                    alt="Make It Fisheye"
+                                />
+                            </picture>
+                            <h3 class="item-title">Make It Fisheye</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="see-all-mobile">
@@ -265,9 +278,14 @@
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
+                rel="noopener"
                 >Frontend Mentor</a
             >. Coded by <a href="#">Januda</a>.
         </div>
+
         <script src="./script.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
