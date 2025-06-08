@@ -381,6 +381,7 @@ textarea {
     background-color: var(--black);
     color: var(--light-gray);
     padding: 2rem;
+    text-align: center;
 }
 
 .attribution a {
