@@ -431,6 +431,11 @@ textarea {
         transform: scaleX(1);
     }
 
+    /* About section */
+    .about-section {
+        padding: 10rem 1rem;
+    }
+
     /* Adjust gallery header layout */
     .gallery-header {
         padding: 0 2rem;
@@ -509,7 +514,7 @@ textarea {
 
     /* Adjust about section layout for larger screens */
     .about-section {
-        padding: 7rem 4rem;
+        padding: 10rem 4rem;
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -573,8 +578,7 @@ textarea {
 
     /* Add vertical padding for the about section */
     .about-section {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
+        padding: 12rem 2rem;
     }
 
     /* Add vertical padding for the gallery grid */
